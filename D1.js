@@ -31,11 +31,9 @@ REGOLE
 
 */
 
-
 /* ESERCIZIO 2
  Crea una variable chiamata "myName" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
-
 
 const myName = "Andrea";
 console.log(myName);
@@ -43,7 +41,6 @@ console.log(myName);
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
-
 
 const number1 = 12;
 const number2 = 20;
@@ -54,7 +51,6 @@ console.log(sum);
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
-
 const x = 12;
 
 /* ESERCIZIO 5
@@ -62,14 +58,12 @@ const x = 12;
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
-
 //const myName = "Geria";
 // L'output genererà un errore in quanto non è possibile riassegnare un valore ad una variabile già definita tramite il costrutto const.
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
-
 
 const diff = x - 4;
 console.log(diff);
@@ -80,11 +74,13 @@ console.log(diff);
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 */
 
-
 const name1 = "john";
 let name2 = "John";
-const control = (name1 !== name2) ? "La stringa 1 è diversa dalla stringa 2" : "Le stringhe sono uguali";
+const control =
+  name1 !== name2
+    ? "La stringa 1 è diversa dalla stringa 2"
+    : "Le stringhe sono uguali";
 console.log(control);
-name2 = name2.toLowerCase();
-const lower = (name1 === name2);
+const lower = name1.toLowerCase() === name2.toLowerCase();
 console.log(lower);
+console.log(name2);
